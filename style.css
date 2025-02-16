@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=UnifrakturCook:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+.sideBar {
+    position: relative;
+    margin-left: 5%;
+    width: 50vw;
+    height: 100vh;
+}
+
+.sideBarImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.odinLogoImage{
+    height: 15vh;
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "UnifrakturCook", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    padding-block: 5%;
+    gap: 5%;
+    color: white;
+    background-color: black;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 20%;
+
+}
+
+.rightMain {
+    flex-direction: column;
+}
