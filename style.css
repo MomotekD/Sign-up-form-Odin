@@ -5,14 +5,35 @@
     margin: 0;
 }
 
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.cursive {
+    font-style: italic;
+}
+
 body {
     display: flex;
+    font-family: "Roboto";
+}
+
+.header {
+    max-width: 500px;
+    margin-inline-start: 5vw;
+    margin-top: 15vh;
+    margin-bottom: 30px;
+}
+
+.tagline {
+    margin-top: 30px;
 }
 
 .sideBar {
     position: relative;
     margin-left: 5%;
-    width: 50vw;
+    width: 35vw;
     height: 100vh;
 }
 
@@ -45,6 +66,108 @@ body {
 
 }
 
+.photoCredit {
+    display: flex;
+    color: #ededed;
+    opacity: 0.6;
+    font-size: 0.7rem;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+}
+
+.normalLink{
+    text-decoration: underline;
+    color: white;
+}
+
 .rightMain {
     flex-direction: column;
+    flex: 1;
+    background-color: rgb(250, 253, 255);
 }
+
+.accountForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0px 2px 3px rgb(188, 188, 188);
+}
+
+.formColumns {
+    display: flex;
+}
+
+input {
+    width: 15vw;
+    height: 3vh;
+    margin-bottom: 5%;
+    border: #ededed solid;
+    border-radius: 5px;
+}
+
+.password:valid {
+    border: #596D48 solid;
+}
+
+.password:invalid {
+    border: #f41818 solid;
+}
+
+input:focus {
+    border: rgb(0, 170, 255);
+    box-shadow: 2px 2px 1px rgba(105, 105, 105, 0.5);
+}
+
+input:user-valid {
+    border-color: #28a745;
+}
+
+input:user-invalid {
+    border-color: #f41818;
+}
+
+
+label {
+    color: rgb(102, 102, 102);
+    display: block;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.firstFormColumn {
+    flex-direction: column;
+    margin-inline: 5%;
+}
+
+.secondFormColumn {
+    flex-direction: column;
+}
+
+.accountCreateBtn{
+    padding: 1.5vh 3vw;
+    margin-block: 2vh;
+    margin-left: 5.5vw;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px rgba(188, 188, 188, 0.5);
+    transition: ease-in 300ms;
+}
+.accountCreateBtn:hover{
+    cursor: pointer;
+    margin-top: 1.5vh;
+    margin-bottom: 2.5vh;
+    transition: ease-in 300ms;
+}
+
+.logInParagraph {
+    margin-left: 5.5vw;
+    font-size: 0.9rem;
+}
+
