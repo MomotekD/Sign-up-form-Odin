@@ -13,22 +13,36 @@
             <img class="odinLogoImage" src="images/odin-lined.png">
             <h1 class="odinLogoText">Odin</h1>
         </div>
+        <div class="photoCredit">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto" class="normalLink" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" class="normalLink" target="_blank">Uplash</a></p>
+        </div>
     </div>
     <div class="rightMain">
         <div class="header">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit mattis interdum. Nulla facilisi. Nullam hendrerit eros ac elit varius, in volutpat ipsum sollicitudin.</h3>
-            <h4>You <span class="cursive">know</span> what you want to.</h4>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit mattis interdum. Nulla facilisi. Nullam hendrerit eros ac elit varius</h3>
+            <h4 class="tagline">You <span class="cursive">know</span> what you want to.</h4>
         </div>
         <div class="main">
-            <h3>Let's do this!</h3>
             <form action="">
                 <div class="accountForm">
-                    <input type="text" name="name" required>
-                    <input type="text" name="lastName" required>
-                    <input type="email" name="email" required>
-                    <input type="number" name="phoneNumber" required>
-                    <input type="text" name="password" required>
-                    <input type="text" name="confirmPassword" required>
+                    <div class="formColumns">
+                        <div class="firstFormColumn">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" >
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="secondFormColumn">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" pattern="^\+?[0-9]{9,15}$" placeholder="+48123456789" name="phoneNumber">
+                            <label for="password">PASSWORD</label>
+                            <input class="password" type="password" name="password" required>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input class="password" type="password" name="confirmPassword" required>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit" class="accountCreateBtn">Create Account</button>
                 <p class="logInParagraph">Already have an account? <a href="nothing">Log in</a></p>
